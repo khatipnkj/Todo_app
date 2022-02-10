@@ -93,9 +93,17 @@ export default function App() {
         />
       ))}
       <View>
-        <Button title="Delete Selected" hndlebtn={hndleDeleteSAll} Color="#DDDDDD"/>
+        <Button
+          title="Delete Selected"
+          hndlebtn={hndleDeleteSAll}
+          Color="#DDDDDD"
+        />
       </View>
-      <Footer style={styles.footer} total={data.Todos.length} Todos={data.Todos}/>
+      <Footer
+        style={styles.footer}
+        total={data.Todos.length}
+        Todos={data.Todos}
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -108,20 +116,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 15,
     marginHorizontal: 5,
-    // justifyContent: 'center',
   },
-  button: {
-    alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    padding: 10,
+  footer: {
+    marginTop: 100,
   },
-  deletebtn: {
-    alignItems: "center",
-    backgroundColor: "red",
-    padding: 3,
-    width: 80,
-  },
-  footer:{
-    marginTop:100
-  }
 });
